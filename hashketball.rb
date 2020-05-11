@@ -231,5 +231,16 @@ def player_numbers (team)
 end
 
 
+def player_numbers (player)
+  
+  hash = game_hash
+  
+  hash.each do |key, value|
+    
+  end
+  
+end
+
+
 
 # Write code here
