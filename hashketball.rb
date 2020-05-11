@@ -170,4 +170,22 @@ end
 
 
 
+
+def team_colors (team)
+  
+  hash = game_hash
+  
+  if hash[:home][:team_name] = team 
+    
+    return hash[:home][:colors]
+    
+  else
+    
+    return hash[:away][:colors]
+    
+  end
+  
+end
+
+
 # Write code here
