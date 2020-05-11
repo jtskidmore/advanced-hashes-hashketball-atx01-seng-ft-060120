@@ -150,6 +150,12 @@ def num_points_scored (name)
 end
 
 
+def shoe_size (name)
+  
+  
+  
+end
+
 
 
 # Write code here
