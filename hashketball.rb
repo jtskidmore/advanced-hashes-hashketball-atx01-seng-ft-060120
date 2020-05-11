@@ -234,13 +234,14 @@ end
 def player_numbers (player)
   
   hash = game_hash
+  stats = {}
   
   hash.each do |location, value|
 
     value[:players].each do |element|
       
-      if element[:player_name] == name
-        return element[:shoe]
+      if element[:player_name] == player
+        
       end
       
     end
