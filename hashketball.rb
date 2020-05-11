@@ -211,20 +211,7 @@ def player_numbers (team)
   
   hash.each do |key, value|
     
-    if value[:team_name] == "Brooklyn Nets"
-      
-      counter = 0 
-      while counter < value[:players].length do
-      
-        numbers.push(value[:players][counter][:number])
-        
-        counter += 1
-      
-      end
-    
-    end
-    
-    if value[:team_name] == "Charlotte Hornets"
+    if value[:team_name] == team
       
       counter = 0 
       while counter < value[:players].length do
