@@ -175,14 +175,12 @@ def team_colors (team)
   
   hash = game_hash
  
-  if hash[:home][:team_name] = team 
-    
-    return hash[:home][:colors]
-    
-  else
-    
+  if team == "Charlotte Hornets"
     return hash[:away][:colors]
-    
+  end
+  
+  if team == "Brooklyn Nets"
+    return hash[:home][:colors]
   end
   
 end
