@@ -203,6 +203,31 @@ def team_names
 end
 
 
+def player_numbers (team)
+  
+  hash = game_hash
+  
+  nets_numbers = []
+  hornets_numbers = []
+  
+  hash.each do |key, value|
+    
+    if value[:team_name] == "Brooklyn Nets"
+      
+      counter = 0 
+      while counter < value[:players].length 
+      
+        nets_numbers.push(value[:players][counter][:number])
+        
+        counter += 1
+      
+      end
+    
+    end
+    
+  end
+  
+end
 
 
 
