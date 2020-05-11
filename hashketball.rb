@@ -227,7 +227,7 @@ def player_numbers (team)
     if value[:team_name] == "Charlotte Hornets"
       
       counter = 0 
-      while counter < value[:players].length 
+      while counter < value[:players].length do
       
         numbers.push(value[:players][counter][:number])
         
