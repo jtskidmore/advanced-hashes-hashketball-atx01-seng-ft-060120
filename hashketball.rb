@@ -248,8 +248,6 @@ def player_stats (player)
     
   end
   
-  stats.shift
-  
   stats
   
 end
