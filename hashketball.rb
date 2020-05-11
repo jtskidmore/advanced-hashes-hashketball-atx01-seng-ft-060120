@@ -241,7 +241,7 @@ def player_stats (player)
     value[:players].each do |element|
       
       if element[:player_name] == player
-        stats.push(element)
+        stats = element
       end
       
     end
