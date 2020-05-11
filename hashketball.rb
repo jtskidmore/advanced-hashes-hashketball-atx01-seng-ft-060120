@@ -231,7 +231,7 @@ def player_numbers (team)
 end
 
 
-def player_numbers (player)
+def player_stats (player)
   
   hash = game_hash
   stats = {}
