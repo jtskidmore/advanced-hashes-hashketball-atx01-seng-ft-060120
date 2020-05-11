@@ -253,5 +253,38 @@ def player_stats (player)
 end
 
 
+def big_shoe_rebounds 
+  
+  hash = game_hash
+  
+  sizes = []
+  
+  hash.each do |location, value|
+
+    value[:players].each do |element|
+      
+      sizes.push(element[:shoe_size])
+      
+    end
+    
+  end
+  
+  sizes.sort 
+  
+  largest_size = sizes.last 
+  
+  hash.each do |location, value|
+
+    value[:players].each do |element|
+      
+      if element[:shoe_size] == largest_size
+        return element[:rebounds]
+      end
+      
+    end
+    
+  end
+  
+end
 
 # Write code here
