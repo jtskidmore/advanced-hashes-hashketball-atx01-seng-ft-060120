@@ -250,6 +250,8 @@ def player_numbers (player)
   
   stats.shift
   
+  stats
+  
 end
 
 
