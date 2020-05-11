@@ -138,7 +138,7 @@ def num_points_scored (name)
   hash.each do |location, value|
 
     value[:players].each do |element|
-      binding.pry
+      
       if [element][:player_name] == name
         return element[:points]
       end
