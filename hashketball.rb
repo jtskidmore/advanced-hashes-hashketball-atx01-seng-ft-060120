@@ -174,7 +174,7 @@ end
 def team_colors (team)
   
   hash = game_hash
-  
+  binding.pry
   if hash[:home][:team_name] = team 
     
     return hash[:home][:colors]
