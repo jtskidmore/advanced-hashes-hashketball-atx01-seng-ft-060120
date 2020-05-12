@@ -263,7 +263,7 @@ def big_shoe_rebounds
 
     value[:players].each do |element|
       
-      sizes.push(element[:shoe_size])
+      sizes.push(element[:shoe])
       
     end
     
@@ -277,7 +277,7 @@ def big_shoe_rebounds
 
     value[:players].each do |element|
       
-      if element[:shoe_size] == largest_size
+      if element[:shoe] == largest_size
         return element[:rebounds]
       end
       
