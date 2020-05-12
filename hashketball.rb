@@ -270,7 +270,7 @@ def big_shoe_rebounds
   end
   
   sizes.sort 
-  binding.pry
+ 
   largest_size = sizes.last 
   
   hash.each do |location, value|
